@@ -7,4 +7,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+  get "users/new"
+  put "users/update"
+  post "candidates/create"
+  get    "/login",   to: "sessions#new"
+  post   "/login",   to: "sessions#create"
+  delete "/logout",  to: "sessions#destroy" # not implemented
+  get "/candidates", to: "candidates#results"
+resources :candidates  
+resources :users
 end

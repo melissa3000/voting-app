@@ -1,0 +1,41 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+.login-input-field {
+  margin-bottom: 10px;
+  min-height: 30px;
+  border-radius: 5px;
+}
+
+button {
+  width: 70px;
+  height: 45px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#submit-button {
+  width: 100px;
+}
+
+#vote-label, #login-label, #result-header {
+  font-size: x-large;
+  font-family: "Courier New", Courier, monospace;
+}
+
+label {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+}
