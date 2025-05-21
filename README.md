@@ -12,6 +12,7 @@ This app should not be considered complete. Given more time, additional improvem
 
 - validations around similar candidate names, avoiding abuse like myFave, myFave1, myFave2
 - authentication for passwords and admin access to be able to see vote results - possibly adding admin flag to user table
+- app doesn't currently validate login - sessions aren't quite implemented correctly and a user can navigate directly to a vote page by guessing the user id (security risk)
 - If these tables were real, we should use UUIDs for id's instead of the auto-increment to avoid security issues
 - accommodating multiple voters at once
 - protecting against sql injections
